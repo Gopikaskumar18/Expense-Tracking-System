@@ -23,22 +23,22 @@ This application allows users to:
 
 The project demonstrates clean separation between backend logic and frontend UI.
 
-# Architecture
-┌──────────────────────┐
-│  Frontend (Streamlit)│
-└───────────┬──────────┘
-↓
-┌──────────────────────┐
-│   REST API (HTTP)    │
-└───────────┬──────────┘
-            
-┌──────────────────────┐
-│   Backend (FastAPI)  │
-└───────────┬──────────┘
-            
-┌──────────────────────┐
-│      Database        │
-└──────────────────────┘
+# Architecture:
+Frontend: Streamlit
+
+The user interacts with the application through the Streamlit frontend.
+
+REST API:
+
+Frontend communicates with the backend via HTTP REST API calls.
+
+Backend: FastAPI
+
+Handles business logic, processes requests from the frontend, and interacts with the database.
+
+Database:
+
+Stores all application data that the backend reads from and writes to.
 
 
 # Flow Explanation
